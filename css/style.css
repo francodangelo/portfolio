@@ -1,0 +1,35 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+/* text-orientation: upright; */
+
+/* Reset default values put by browsers to start clean */
+* { /* universal selector */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Project wide font definitions */
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    /* padding: 30px; */
+}
+/* Header class */
+.landing {
+    padding: 0px;
+    height: 95vh; /* at any point in time, the height of this element has to be 95% of the viewport */
+    background:rgba(92, 92, 92, 0.603), url(../img/landing.jpg);
+    background-size: cover; /* whatever the width of the viewport, it will always try to fit the element inside the box */
+    background-position: top; /* set image to top of the container no matter how the viewport shifts */
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 9 0% 100%, 0 90vh); 
+}
